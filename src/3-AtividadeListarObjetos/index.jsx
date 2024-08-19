@@ -1,3 +1,4 @@
+
 // Crie um elemento `<div>`.
 // Utilize o método `map` para listar cada objeto da `listaProdutos`
 // dentro desse `<div>`.
@@ -13,7 +14,17 @@ export default function Home() {
   return (
     <div>
          <h1>Livros de Programação</h1>
-    </div>
-   
-  );
-}
+
+            {
+              listaProdutos.map((produto)=>
+            <div key={produto.id}>
+              <p>{produto.nome}</p>
+              <p>{produto.preco}</p>
+              </div>
+              )} 
+</div> 
+                )
+                 }
+
+                 
+               
