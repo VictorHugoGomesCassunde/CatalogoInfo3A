@@ -39,7 +39,10 @@
 // Passe o identificador (`id`) do item como parâmetro para `removerItemPedidos`, o mesmo que você usa no `map`.
 // No conteúdo do botão, coloque o texto "Remover".
 
-import { useState } from "react";
+import { useState } from "react"
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 
 export default function Home() {
   const [listaProdutos, setProdutos] = useState([
@@ -91,6 +94,7 @@ export default function Home() {
           </div>
         )
     }
+    <Footer desenvolvedor="Victor Hugo rei delas" />
     </div>
   );
 }
